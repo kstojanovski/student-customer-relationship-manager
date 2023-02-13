@@ -1,0 +1,8 @@
+complexity:
+  TooManyFunctions:
+    thresholdInClasses: 20
+performance:
+  SpreadOperator:
+    active: true
+    excludes: ['**/SCRMApplication.kt']
+    #excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/jsTest/**', '**/iosTest/**', '**/SCRMApplication.kt'] - original

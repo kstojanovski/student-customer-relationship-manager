@@ -1,0 +1,38 @@
+= Spring REST Docs for the "Course" Controller
+
+This is an example output for a service running at http://localhost:8080/api/v1/course/->:
+
+== Create
+Creates new Course instance.
+.Request
+include::{snippets}/api-v1-course-create/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-course-create/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-course-create/http-response.adoc[]
+
+== Read (find)
+Retrieves existing Course with the given id.
+.Request
+include::{snippets}/api-v1-course-read/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-course-read/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-course-read/http-response.adoc[]
+
+== Update
+Updates existing Course with the given id.
+.Request
+include::{snippets}/api-v1-course-update/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-course-update/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-course-update/http-response.adoc[]
+
+== Delete
+Deletes existing Course with the given id.
+include::{snippets}/api-v1-course-delete/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-course-delete/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-course-delete/http-response.adoc[]

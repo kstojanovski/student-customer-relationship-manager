@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: postgres:14
+    container_name: student_crm_postgres
+    ports:
+      - "5433:5433"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=student_crm
+      - PGPORT=5433
+    networks:
+      default:
+        aliases:
+          - scrm_database

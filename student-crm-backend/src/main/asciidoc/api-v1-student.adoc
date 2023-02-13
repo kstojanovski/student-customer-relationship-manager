@@ -1,0 +1,40 @@
+= Spring REST Docs for the "Student" Controller
+
+This is an example output for a service running at http://localhost:8080/api/v1/student/->:
+
+== Create
+Creates new Student instance.
+
+.Request
+include::{snippets}/api-v1-student-create/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-student-create/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-student-create/http-response.adoc[]
+== Read (find)
+Retrieves existing Student with the given id.
+
+.Request
+include::{snippets}/api-v1-student-read/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-student-read/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-student-read/http-response.adoc[]
+== Update
+Updates existing Student with the given id.
+
+.Request
+include::{snippets}/api-v1-student-update/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-student-update/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-student-update/http-response.adoc[]
+== Delete
+Deletes existing Student with the given email.
+
+.Request
+include::{snippets}/api-v1-student-delete/http-request.adoc[]
+.Request Fields
+include::{snippets}/api-v1-student-delete/request-fields.adoc[]
+.Response
+include::{snippets}/api-v1-student-delete/http-response.adoc[]

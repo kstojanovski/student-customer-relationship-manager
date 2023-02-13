@@ -1,0 +1,26 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    container_name: student_crm_postgres
+    ports:
+      - "5433:5433"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=student_crm
+      - PGPORT=5433
+    networks:
+      default:
+        aliases:
+          - scrm_database
+  backend:
+    depends_on:
+      - db
+    image: dockeraccount/student-crm:0.1.0-SNAPSHOT
+    container_name: student_crm_backend
+    ports:
+      - "8888:8888"
+      - "5005:5005"
+    environment:
+      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005

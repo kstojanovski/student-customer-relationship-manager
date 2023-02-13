@@ -1,0 +1,59 @@
+.popup-content {
+    background-color: white;
+    border: 1px solid blue;
+    border-style: groove;
+    padding: 3px;
+    margin: 3px;
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content h3, .modifyStudent h3 {
+    text-align: center;
+}
+
+.popup-content div div {
+    text-align: right;
+}
+
+.popup-content label, .modifyStudent label,
+.popup-content input, .modifyStudent input {
+    margin: 7px;
+}
+
+.popup-content label {
+    text-align: right;
+}
+
+.popup-content input {
+    min-width: 250px;
+}
+
+.popup-content .action {
+    border: 1px solid blue;
+    border-style: groove;
+    height: 35px;
+}
+
+.popup-content .save {
+    float: left;
+    margin: 7px;
+}
+
+.popup-content .close {
+    float: right;
+    margin: 7px;
+}
+
+.modifyStudent .action {
+    display: flex;
+}
+
+.modifyStudent .action button {
+    flex: 1;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+}

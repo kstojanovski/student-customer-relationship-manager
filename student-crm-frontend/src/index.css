@@ -1,0 +1,24 @@
+@import "form.css";
+@import "modal.css";
+
+.student-crm {
+    font-size: 10;
+}
+
+.header {
+    font-size: 15;
+}
+
+.blueborder {
+    border: 1px solid blue;
+    border-style: groove;
+    padding: 3px;
+    margin: 3px;
+}
+
+.selectedSudent {
+    border: 2px solid greenyellow;
+    border-style: groove;
+    padding: 3px;
+    margin: 3px;
+}

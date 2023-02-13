@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: student-crm
+  flyway:
+    enabled: true
+    schemas: public
+logging:
+  level:
+    root: WARN
+    org.acme.custom.logger: TRACE

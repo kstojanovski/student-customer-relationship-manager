@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        order_inserts: true
+        order_updates: true
+        #batch_fetch_style: dynamic
+        #default_batch_fetch_size: 30
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 100
+          fetch_size: 400
+          lob:
+            non_contextual_creation: true
+    show-sql: true
+  flyway:
+    enabled: false
+logging:
+  level:
+    root: WARN
+    org.acme.custom.logger: TRACE

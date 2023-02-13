@@ -1,0 +1,7 @@
+= Student Customer Relationship Manager backend
+
+== Spring REST Docs of the Controller Endpoints
+Here are listed the REST documentation of the controller endpoints for the entity:
+
+* xref:api-v1-student.adoc[Student]
+* xref:api-v1-course.adoc[Course]
